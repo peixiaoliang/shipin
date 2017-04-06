@@ -8,10 +8,16 @@
 	 		width: 100%;
 	 	}
 	 </style>
+	 <link rel="stylesheet" href="dist/plyr.css">
+<!-- Plyr core script -->
+<script src="dist/plyr.js"></script>
 </head>
 <body>
-<video src="FFOutput/yuangong.mp4" controls="controls" poster="image/1.png">
+<video src="FFOutput/yuangong.mp4"  poster="image/1.png" webkit-playsinline="true">
 Your browser does not support the video tag.
 </video>
+
+<script>plyr.setup();</script>
+
 </body>
 </html>
