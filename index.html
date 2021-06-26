@@ -63,11 +63,17 @@
 			<img src="./images/title.png" alt="">
 		</div>
 		<div class="videoBox">
-			<video src="0181.mp4" loop autoplay controls ></video>
+			<video src="0181.mp4" loop autoplay controls preload="auto" id="shakeVideo" webkit-playsinline="true" playsinline="true"></video>
 		</div>
 	</div>
 </body>
 <script>
-	
+	$(function(){
+		var video = document.getElementById("shakeVideo");
+		video.play();
+		document.addEventListener('WeixinJSBridgeReady',function(){
+			video.play();
+		},false)
+	})
 </script>
 </html>
